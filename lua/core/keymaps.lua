@@ -58,3 +58,5 @@ vim.keymap.set('n', '<leader>f', function() vim.lsp.buf.format { async = true } 
 vim.keymap.set('x', '<leader>f', vim.lsp.buf.format, { desc = "选中区域格式化" }) -- 选中区域格式化
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = "代码操作" }) -- 代码操作
 vim.keymap.set('n', '<leader>qf', vim.lsp.buf.code_action, { desc = "修复当前问题" }) -- 自动修复（也使用代码操作）
+
+vim.keymap.set('n', '<leader>bn', ':enew<CR>', { noremap = true, silent = true, desc = "新建 buffer" }) -- 新建 buffer
